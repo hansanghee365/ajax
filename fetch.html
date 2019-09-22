@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="utf-8" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <article>
+
+    </article>
+    <input type="button" name="" value="fetch" onclick="
+      /*
+      fetch('html').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML = text;
+        })
+      })
+      */
+
+      fetch('html').then(function(response){
+        if(response.status=='404'){
+          alert('Not Found');
+        }
+      });
+      console.log(1);
+      console.log(2);
+    ">
+  </body>
+</html>
